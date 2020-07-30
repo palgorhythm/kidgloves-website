@@ -5,7 +5,7 @@ import StyledLink from './StyledLink';
 import Image from './Image';
 
 const HeaderStyle = styled.header`
-  background: ${(props) => props.theme.lightPurple};
+  background: ${(props) => props.theme.yellow};
   font-weight: 100;
   margin: 0;
   display: flex;

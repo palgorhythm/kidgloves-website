@@ -14,7 +14,7 @@ import Footer from './Footer';
 import Header from './Header';
 
 const PageStyle = styled.div`
-  background: ${(props) => props.theme.lightPurple};
+  background: ${(props) => props.theme.yellow};
   margin: 0;
   padding: 1rem;
   height: 100vh;
