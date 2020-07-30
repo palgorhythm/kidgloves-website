@@ -32,6 +32,7 @@ const Body = () => (
         With a musical background in jazz, rock, and hip hop, KG's sound lands somewhere between The Beach Boys, Dijon, and Alex G. <br/>
         Watch out for the upcoming EP "Floor Music" early 2021.
       </p>
+      <br/>
       <Link style={{color: '#7070ff'}} to='https://www.instagram.com/kidglov3s/'>instagram</Link><br/>
       <Link style={{color: '#7070ff'}} to='https://www.facebook.com/kidglov3s'>facebook</Link><br/>
       <Link style={{color: '#7070ff'}} to='https://open.spotify.com/artist/0uhS2Dm4iv3qukaycmPbNF?si=fA7H472XQxG5Glc3zXpvEA'>spotify</Link><br/>
