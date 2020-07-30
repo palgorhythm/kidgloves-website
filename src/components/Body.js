@@ -5,8 +5,8 @@ import Image from './Image';
 
 const BodyStyle = styled.div`
   background: ${(props) => props.theme.yellow};
-  padding: 1.25rem;
-  margin-top: 1rem;
+  padding: 4% 8%;
+  margin: 2%;
   border-radius: 1rem;
   display: flex;
   justify-items: center;
@@ -19,6 +19,8 @@ const BodyTextArea = styled.div`
   justify-content: center;
   margin: 1rem;
 `;
+
+const linkPurple = '#7070ff'
 
 const Body = () => (
   <BodyStyle>
@@ -33,11 +35,13 @@ const Body = () => (
         Watch out for the upcoming EP "Floor Music" early 2021.
       </p>
       <br/>
-      <Link style={{color: '#7070ff'}} to='https://www.instagram.com/kidglov3s/'>instagram</Link><br/>
-      <Link style={{color: '#7070ff'}} to='https://www.facebook.com/kidglov3s'>facebook</Link><br/>
-      <Link style={{color: '#7070ff'}} to='https://open.spotify.com/artist/0uhS2Dm4iv3qukaycmPbNF?si=fA7H472XQxG5Glc3zXpvEA'>spotify</Link><br/>
-      <Link style={{color: '#7070ff'}} to='https://soundcloud.com/user-177473750'>soundcloud</Link><br/>
-      <Link style={{color: '#7070ff'}} to='https://www.youtube.com/kidgloves'>youtube</Link><br/>
+      <div>
+        <Link style={{color: linkPurple}} to='https://www.instagram.com/kidglov3s/'>instagram</Link><br/><br/>
+        <Link style={{color: linkPurple}} to='https://www.facebook.com/kidglov3s'>facebook</Link><br/><br/>
+        <Link style={{color: linkPurple}} to='https://open.spotify.com/artist/0uhS2Dm4iv3qukaycmPbNF?si=fA7H472XQxG5Glc3zXpvEA'>spotify</Link><br/><br/>
+        <Link style={{color: linkPurple}} to='https://soundcloud.com/user-177473750'>soundcloud</Link><br/><br/>
+        <Link style={{color: linkPurple}} to='https://www.youtube.com/kidgloves'>youtube</Link><br/><br/>
+      </div>
     </BodyTextArea>
     <div style={{ minWidth: `30%`, maxWidth: `300px`, margin: 'auto' }}>
         <Image imageName='kidGlovesBioPic' />
