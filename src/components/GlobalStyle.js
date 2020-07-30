@@ -6,7 +6,7 @@ export const theme = {
   red: '#e76f51',
   orange: '#f4a261',
   black: '#264653',
-  lightPurple: '#C6D0FF',
+  lightPurple: '#d4dbff',
 };
 
 export const GlobalStyle = createGlobalStyle`
