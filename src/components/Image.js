@@ -25,7 +25,7 @@ const Image = (props) => {
       }
       kidGlovesBioPic: file(relativePath: { eq: "kidGlovesBioPic.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -39,6 +39,7 @@ const Image = (props) => {
       }
     }
   `);
+  console.log('yeet', data, props.imageName)
   return (
     <Img
       style={{ borderRadius: `1rem` }}
