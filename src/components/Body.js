@@ -25,21 +25,20 @@ const Body = () => (
       <Image imageName='profilePic' />
     </div>
     <BodyTextArea>
-      <h1>🐥 hi 🐥</h1>
-      <p>i'm a software engineer and professional musician.<br/>
-        i've played and toured all over the world playing with great people, 
-        like Steve Lehman, Myra Melford, Drew Gress, David Binney, and Oliver Tree.<br/> 
-        i like to combine my love of music and code to build things, 
-        like <Link to='https://batterydrums.bandcamp.com/'>BATTERY</Link>. <br/>
-        i'm currently a senior software engineer at  
-        <Link to='https://batterydrums.bandcamp.com/'> mothership</Link>, where i work on logistics optimization.
+      <h1>BIO</h1>
+      <p>
+        Hailing from South Florida, now based in LA, Kid Gloves is the dream project of an anonymous producer/songwriter. <br/>
+        To him, "putting on your kid gloves" means letting go of restraint and inhibition, getting out your dreams, and dancing in the rain. <br/>
+        This is a release for him as he makes a name for himself as a producer for other projects.<br/><br/>
+        
+        With a musical background in jazz, rock, and hip hop, KG's sound lands somewhere between The Beach Boys, Dijon, and Alex G. <br/>
+        Watch out for the upcoming EP "Floor Music" early 2021.
       </p>
-      <Link to='/work/'></Link>
-      <Link to='https://open.spotify.com/playlist/0IeUXYZUUB9vz172ouSQ0p?si=3IfQywgjSCyOWKFYHvxojQ'>spotify discography</Link>
-      <Link to='https://github.com/palgorhythm'>github</Link>
-      <Link to='https://linkedin.com/in/palgorhythm'>linkedin</Link>
-      <Link to='https://www.youtube.com/channel/UCO6KYK2RJU7ARxsLhutzeng'>youtube</Link>
-      <Link to='https://www.tiktok.com/@__battery'>tiktok</Link>
+      <Link to='https://www.instagram.com/kidglov3s/'>instagram</Link>
+      <Link to='https://www.facebook.com/kidglov3s'>facebook</Link>
+      <Link to='https://open.spotify.com/artist/0uhS2Dm4iv3qukaycmPbNF?si=fA7H472XQxG5Glc3zXpvEA'>spotify</Link>
+      <Link to='https://soundcloud.com/user-177473750'>soundcloud</Link>
+      <Link to='https://www.youtube.com/kidgloves'>youtube</Link>
 
     </BodyTextArea>
   </BodyStyle>
