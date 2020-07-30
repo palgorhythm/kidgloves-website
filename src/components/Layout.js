@@ -11,7 +11,6 @@ import { useStaticQuery, graphql } from 'gatsby';
 import styled, { ThemeProvider } from 'styled-components';
 import { GlobalStyle, theme } from './GlobalStyle';
 import Footer from './Footer';
-
 import Header from './Header';
 
 const PageStyle = styled.div`

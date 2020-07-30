@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const theme = {
   green: '#2a9d8f',
-  yellow: '#e9c46a',
+  yellow: '#fff3d9',
   red: '#e76f51',
   orange: '#f4a261',
   black: '#264653',

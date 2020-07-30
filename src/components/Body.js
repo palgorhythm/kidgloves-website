@@ -4,11 +4,12 @@ import styled from 'styled-components';
 import Image from './Image';
 
 const BodyStyle = styled.div`
-  background: ${(props) => props.theme.green};
+  background: ${(props) => props.theme.yellow};
   padding: 1.25rem;
   margin-top: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   display: flex;
+  justify-items: center;
   align-content: center;
 `;
 
@@ -21,9 +22,6 @@ const BodyTextArea = styled.div`
 
 const Body = () => (
   <BodyStyle>
-    <div style={{ minWidth: `20vw`, maxWidth: `300px` }}>
-      <Image imageName='profilePic' />
-    </div>
     <BodyTextArea>
       <h1>BIO</h1>
       <p>
@@ -39,8 +37,10 @@ const Body = () => (
       <Link to='https://open.spotify.com/artist/0uhS2Dm4iv3qukaycmPbNF?si=fA7H472XQxG5Glc3zXpvEA'>spotify</Link>
       <Link to='https://soundcloud.com/user-177473750'>soundcloud</Link>
       <Link to='https://www.youtube.com/kidgloves'>youtube</Link>
-
     </BodyTextArea>
+    <div style={{ minWidth: `30%`, maxWidth: `300px`, margin: 'auto' }}>
+        <Image imageName='kidGlovesBioPic' />
+      </div>
   </BodyStyle>
 );
 

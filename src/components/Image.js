@@ -23,7 +23,14 @@ const Image = (props) => {
           }
         }
       }
-      profilePic: file(relativePath: { eq: "kidGlovesBioPic.jpg" }) {
+      kidGlovesBioPic: file(relativePath: { eq: "kidGlovesBioPic.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      heartsPic: file(relativePath: { eq: "heartsPic.png" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
