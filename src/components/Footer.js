@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterStyle = styled.footer`
-  color: ${(props) => props.theme.black};
+  color: ${(props) => props.theme.darkPurple};
   text-decoration: none;
   position: fixed;
   bottom: 10px;
