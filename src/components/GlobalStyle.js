@@ -5,6 +5,7 @@ export const theme = {
   yellow: '#fff8de',
   blue: '#fafaff',
   red: '#e76f51',
+  white: '#FFFFFF',
   orange: '#f4a261',
   black: '#170f33',
   lightPurple: '#d4dbff',
@@ -16,12 +17,21 @@ export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+  html {
+    position: relative;
+  }
   body {
+    height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 100;
     font-size: 1em;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.5em;
   }
 
   a {

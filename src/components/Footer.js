@@ -4,9 +4,9 @@ import styled from 'styled-components';
 const FooterStyle = styled.footer`
   color: ${(props) => props.theme.darkPurple};
   text-decoration: none;
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 `;
 
 const Footer = () => (

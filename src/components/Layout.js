@@ -14,7 +14,7 @@ import Footer from './Footer';
 import Header from './Header';
 
 const PageStyle = styled.div`
-  background: ${(props) => props.theme.yellow};
+  background: ${(props) => props.theme.white};
   margin: 0;
   padding: 1rem;
   height: 100vh;
@@ -34,11 +34,11 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <PageStyle>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
-        <Footer></Footer>
-      </PageStyle>
+        <main>
+          {children}
+        </main>
+
     </ThemeProvider>
   );
 };

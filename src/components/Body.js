@@ -2,15 +2,20 @@ import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import Image from './Image';
+import Footer from './Footer'
 
 const BodyStyle = styled.div`
-  background: ${(props) => props.theme.yellow};
-  padding: 4% 8%;
+  background: ${(props) => props.theme.white};
+  padding: 2%;
   margin: 2%;
   border-radius: 1rem;
   display: flex;
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
   justify-items: center;
   align-content: center;
+  position: relative;
 `;
 
 const BodyTextArea = styled.div`
@@ -24,6 +29,15 @@ const StyledBio = styled.p`
   color: ${(props) => props.theme.black};
 `
 
+const StyledImage = styled.div`
+  min-width: 25vw;
+  max-width: 100%;
+  @media (max-width: 768px) {
+    min-width: 60vw;
+  }
+  margin: auto;
+`
+
 const StyledHeader = styled.h1`
   color: ${(props) => props.theme.black};
 `
@@ -33,7 +47,7 @@ const linkPurple = '#7d90f5'
 const Body = () => (
   <BodyStyle>
     <BodyTextArea>
-      <StyledHeader>BIO</StyledHeader>
+      {/* <StyledHeader>BIO</StyledHeader> */}
       <StyledBio>
         Hailing from South Florida, now based in LA, Kid Gloves is the dream project of an anonymous producer/songwriter. <br/>
         To him, "putting on your kid gloves" means letting go of restraint and inhibition, getting out your dreams, and dancing in the rain. <br/>
@@ -51,9 +65,10 @@ const Body = () => (
         <Link style={{color: linkPurple}} to='https://www.youtube.com/kidgloves'>youtube</Link><br/><br/>
       </div>
     </BodyTextArea>
-    <div style={{ minWidth: `30%`, maxWidth: `300px`, margin: 'auto' }}>
-        <Image imageName='kidGlovesBioPic' />
-      </div>
+    <StyledImage>
+      <Image imageName='kidGlovesBioPic' />
+    </StyledImage>
+    <Footer></Footer>
   </BodyStyle>
 );
 
